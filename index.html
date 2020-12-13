@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soo's Portfolio</title>
+    <meta
+      name="description"
+      content="portfolio that dreams of becoming a developer"
+    />
+    <meta name="author" content="Soo" />
+    <link rel="icon" type="/image/png" href="imgs/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet" 
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    
+    <!-- navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fas fa-globe"></i>        
+        <a href="#">Soo</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">My work</li>
+        <li class="navbar__menu__item">Testimonial</li>
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
+    </nav>
+    <!-- home -->
+    <section id="home">
+      <img
+        src="imgs/profile.png"
+        alt="Soo's profile photo"
+        class="home__avatar"
+      />
+      <h1 class="home__title">Hello, <br />I'm soo preparing a developer</h1>
+      <h2 class="home__description">description 필요</h2>
+      <button class="home__contact">Contact Me</button>
+    </section>
+    <!-- about -->
+    <section id="about" class="section">
+      <h1>About me</h1>
+      <p>나를 어필할 수 있는 두세문장 쓰기</p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon"><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i></div>
+          <h2 class="major__title">HTML, CSS</h2>
+          <div class="major__description">description 필요</div>
+                </div>
+        <div class="major">
+          <div class="major__icon"><i class="fab fa-js-square"></i></div>
+          <h2 class="major__title">JavaScript</h2>
+          <div class="major__description">description 필요</div>
+        </div>
+        <div class="major">
+          <div class="major__icon"><i class="fab fa-react"></i></div>
+          <h2 class="major__title">REACT</h2>
+          <div class="major__description">description 필요</div>
+        </div>
+      </div>
+        <div class="about__jobs">
+          <div class="job">
+            <img src="imgs/jobs/logo-Soongsil.png" alt="Soongsil" class="job__logo">
+          <div class="job__description">
+            <p class="job__name">IT대학 전자정보공학부 전자공학과</p>
+          </div>
+        </div>
+      </div>
+        
+        
+      
+    
+                  </div>
+    </section>
+    <!-- skills -->
+    <section id="skills" class="section">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p>Passion for learning new technologies. Capable of working within a team environment and independently. Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed</p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset_title">Skills</h3>
+          <div class="skill">
+            <div class="skill_description">
+              <span>HTML</span>
+              <span>99%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_description">
+              <span>CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_description">
+              <span>JAVASCRIPT</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill_description">
+              <span>REACT</span>
+              <span>70%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="skillset__right">
+          <div class="tools"><h3 class="skillset_title">Tools</h3>
+          <ul class="tools__list">
+            <li><span>Visual Studio Code</span></li>
+            <li><span>작성필요</span></li>
+            <li><span>작성필요</span></li>
+            <li><span>작성필요</span></li>
+            <li><span>작성필요</span></li>
+            <li><span>작성필요</span></li>
+          </ul>
+        </div>
+          <div class="etc"><h3 class="skillset_title">Etc</h3>
+        <ul class="etc__list">
+          <li><span>Git</span></li>
+          <li><span>Math</span></li>
+          <li><span>작성필요</span></li>
+        </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- work -->
+    <section id="work" class="section">
+      <h1>My Work</h1>
+      <h2>Projects</h2>
+      <div class="work__categories">
+        <button class="category__btn">All<span class="category__count">8</span></button>
+        <button class="category__btn">HTML&CSS<span class="category__count">4</span></button>
+        <button class="category__btn">Javascript<span class="category__count">3</span></button>
+        <button class="category__btn">REACT<span class="category__count">1</span></button>
+      </div>
+      <div class="work__projects">
+        <a href="나의 깃허브 주소" class="project__img" target="blank">
+          <img src="imgs/projects/project1.png" alt="youtube">
+        <div class="project__description">
+          <h3>Youtubesite</h3>
+          <h2>Clone coding with HTML and CSS</h2>
+        </div>
+        </a>
+        <a href="나의 깃허브 주소" class="project__img" target="blank">
+          <img src="imgs/projects/project2.png" alt="youtube">
+        <div class="project__description">
+          <h3>프로젝트2</h3>
+          <h2>설명필요</h2>
+        </div>
+        </a>
+        <a href="나의 깃허브 주소" class="project__img" target="blank">
+          <img src="imgs/projects/project3.png" alt="youtube">
+        <div class="project__description">
+          <h3>프로젝트3</h3>
+          <h2>설명필요</h2>
+        </div>
+        </a>
+        <a href="나의 깃허브 주소" class="project__img" target="blank">
+          <img src="imgs/projects/project4.png" alt="youtube">
+        <div class="project__description">
+          <h3>프로젝트4</h3>
+          <h2>설명필요</h2>
+        </div>
+        </a>
+        <a href="나의 깃허브 주소" class="project__img" target="blank">
+          <img src="imgs/projects/project5.png" alt="youtube">
+        <div class="project__description">
+          <h3>프로젝트5</h3>
+          <h2>설명필요</h2>
+        </div>
+        </a>
+        <a href="나의 깃허브 주소" class="project__img" target="blank">
+          <img src="imgs/projects/project6.png" alt="youtube">
+        <div class="project__description">
+          <h3>프로젝트6</h3>
+          <h2>설명필요</h2>
+        </div>
+        </a>
+        <a href="나의 깃허브 주소" class="project__img" target="blank">
+          <img src="imgs/projects/project7.png" alt="youtube">
+        <div class="project__description">
+          <h3>프로젝트7</h3>
+          <h2>설명필요</h2>
+        </div>
+        </a>
+        <a href="나의 깃허브 주소" class="project__img" target="blank">
+          <img src="imgs/projects/project8.png" alt="youtube">
+        <div class="project__description">
+          <h3>프로젝트8</h3>
+          <h2>설명필요</h2>
+        </div>
+        </a>
+      </div>
+    </section>
+        <!-- contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">hsoo173610@gmail.com</h2>
+      <div class="contact__link">
+        <a href="https://github.com/hsoo173610" target="_blank">
+          <i class="fa fa-github"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="fa-falinkedin-square"></i>
+                  </a>                  
+      </div>
+    <p class="contact__rights">
+      2021 Soo's Portfolio - All right reserved
+    </p>
+    </section>
+  </body>
+</html>

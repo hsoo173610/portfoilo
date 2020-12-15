@@ -170,6 +170,12 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.home__contact:hover {
+  background-color: var(--color-dark-blue);
+  transition: all var(--animation-duration);
+}
+
+
 /* Section common */
 .section {
   padding: 50px;

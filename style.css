@@ -88,11 +88,18 @@ p {
 
 /* Navbar */
 #navbar {
+  position:fixed;
+  width:100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-blue);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark{
+  background-color: var(--color-blue);
 }
 
 .navbar__menu {
@@ -121,10 +128,10 @@ p {
 }
 
 .navbar__toggle-btn{
-  position:absolute;
-  top:8px;
-  right:32px;
-  font-size:24px;
+  position: absolute;
+  top: 8px;
+  right: 32px;
+  font-size: 24px;
   color: var(--color-white);
   display: none;
 
@@ -135,6 +142,7 @@ p {
 #home {
   background: url("imgs/home-background-01.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -176,6 +184,7 @@ p {
   display: flex;
   justify-content: space-between;
   margin: 80px 0;
+  
 }
 
 .major__icon {

@@ -2,13 +2,13 @@
 // Make navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
-document.addEventListener('scroll',( )=>{
-    if(window.scrollY > navbarHeight){
+document.addEventListener('scroll', () => {
+    if (window.scrollY > navbarHeight) {
         navbar.classList.add('navbar--dark');
-    } else{
+    } else {
         navbar.classList.remove('navbar--dark');
     }
-    
+
 });
 
 // Handle scrolling when tapping on the navbar menu
@@ -17,10 +17,10 @@ navbarMenu.addEventListener('click', (event) => {
     console.log(event.target.dataset.link);
     const target = event.target;
     const link = target.dataset.link;
-    if (link==null){
+    if (link == null) {
         return;
     }
-    
+
     scrollIntoView(link);
 
 });
@@ -40,21 +40,43 @@ document.addEventListener('scroll', () => {
 
 // Show "arrow up" button when scrolling down
 const arrowUp = document.querySelector('.arrow-up');
-document.addEventListener('scroll',()=> {
-    if(window.scrollY > homeHeight/2) {
+document.addEventListener('scroll', () => {
+    if (window.scrollY > homeHeight / 2) {
         arrowUp.classList.add('visible');
-    }else{
+    } else {
         arrowUp.classList.remove('visible');
 
     }
 });
 
 // Handle click on the "arrow up" button
-arrowUp.addEventListener('click',() =>{
+arrowUp.addEventListener('click', () => {
     scrollIntoView('#home');
 });
 
-function scrollIntoView(selector){
+// Projects
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (e) => {
+    const filter = e.target.dataset.filter;
+if(filter == null) { 
+    return;
+}
+    console.log(filter);
+    projects.forEach((project) => {
+        console.log(project.dataset.type);
+        if(filter ==='*' || filter == project.dataset.type){
+            project.classList.remove('invisible');
+        }else{
+            project.classList.add('invisible');
+        }
+        
+    });
+
+});
+
+function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
-    scrollTo.scrollIntoView({behavior: 'smooth'});
+    scrollTo.scrollIntoView({ behavior: 'smooth' });
 }

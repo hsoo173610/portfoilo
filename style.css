@@ -123,16 +123,16 @@ p {
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
+  color: var(--color-white);
 }
 
-.navbar__menu__item.active {
-  border: 1px solid var(--color-white);
-  border-radius: var(--size-border-radius);
-}
+
 .navbar__menu__item:hover {
+  border-color: var(--color-white);
   background-color: var(--color-dark-blue);
-  transition: all var(--animation-duration);
+  
 }
 
 .navbar__toggle-btn{
@@ -471,6 +471,10 @@ project__img{
   text-align: center;
   width:100%;
   display: none;
+}
+
+.navbar__menu.open {
+  display : block;
 }
 
 .about__majors {

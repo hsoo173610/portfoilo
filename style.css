@@ -115,9 +115,13 @@ p {
 }
 
 .navbar__logo {
-  margin-left: 18px;
+  margin-top:16px;
+  margin-left:16px;
+  margin-bottom: 16px;
+  font-size: var(--font-medium);
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+  
 }
 .navbar__menu__item {
   padding: 8px 12px;
@@ -137,9 +141,9 @@ p {
 
 .navbar__toggle-btn{
   position: absolute;
-  top: 8px;
-  right: 32px;
-  font-size: 24px;
+  top: 3px;
+  right: 10px;
+  font-size: 18px;
   color: var(--color-white);
   display: none;
 
@@ -381,7 +385,7 @@ project__img{
   top:0;
   left:0;
   opacity: 0;
-  transform: translatex(50px);
+  transform: translatey(-30px);
   transition: all var(--animation-duration) ease-in;
 }
 .project:hover .project__description{
@@ -456,8 +460,21 @@ project__img{
 
 /* For below 768px screen width */
 @media screen and (max-width:768px){
+  :root{
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+    }
+
+
 .navbar__toggle-btn{
   display: block;
+  top:16px;
+  right:16px;
+  font-size: var(--font-medium);
 }
 
 
@@ -467,11 +484,18 @@ project__img{
   background-color: var(--color-blue);
 }
 
+#navbar.navbar--dark{
+opacity:0.8;
+}
+
+
+
 .navbar__menu {
   flex-direction: column;
   text-align: center;
   width:100%;
   display: none;
+  
 }
 
 .navbar__menu.open {
@@ -480,19 +504,41 @@ project__img{
   
 }
 
+.section{
+  padding: 16px;
+  padding-top:40px;
+}
+
+
 .about__majors {
   flex-direction: column;
+  margin-top: 30px;
+  margin-bottom:0px;
 }
 
 .major{
-  margin-bottom:38px;
+  margin-bottom:30px;
 }
 
 .skillset{
   flex-direction: column;
 }
 
+.category__btn{
+  margin:4px 0;
+  width: 100%;
+}
+
 .project{
   flex-grow:1;
 }
+}
+
+.arrow-up{
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  right: 16px;
+  bottom: 16px;
 }

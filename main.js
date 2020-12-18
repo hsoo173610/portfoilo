@@ -20,6 +20,7 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
 
     scrollIntoView(link);
 
@@ -27,7 +28,7 @@ navbarMenu.addEventListener('click', (event) => {
 
 // Navbar toggle button for small screen
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
-navbarToggleBtn.addEventListener('click', () => {
+navbarToggleBtn.addEventListener('click', ()=> {
     navbarMenu.classList.toggle('open');
 });
 

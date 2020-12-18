@@ -248,7 +248,7 @@ p {
 
 /* Skill */
 #skills{
-  background-color: var(--color-lihght-blue);
+  background-color: var(--color-blue);
   
 }
 .skills__title
@@ -390,7 +390,7 @@ project__img{
 }
 
 .project__description h3{
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .project__description h3:after{
@@ -398,9 +398,9 @@ project__img{
   display:block;
   position: relative;
   left: 50%;
-  width:25px;
+  width:80px;
   height:2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 
@@ -408,7 +408,7 @@ project__img{
 
 /* Contact */
 #contact {
-  background-color: var(--color-blue);
+  background: url("imgs/contact-background.png") center/cover no-repeat;
 }
 
 .contact__title,
@@ -464,6 +464,7 @@ project__img{
 #navbar {
   flex-direction: column;
   align-items: flex-start;
+  background-color: var(--color-blue);
 }
 
 .navbar__menu {
@@ -474,7 +475,9 @@ project__img{
 }
 
 .navbar__menu.open {
-  display : block;
+  display: block;
+  
+  
 }
 
 .about__majors {

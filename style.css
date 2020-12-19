@@ -132,6 +132,9 @@ p {
   color: var(--color-white);
 }
 
+.navbar__menu__item.active{
+  border: 1px solid var(--color-white);
+}
 
 .navbar__menu__item:hover {
   border-color: var(--color-white);

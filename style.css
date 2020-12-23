@@ -46,6 +46,47 @@ body {
   margin: 0;
 }
 
+/* text fadein, sliding */
+
+h1.home__title
+{
+  animation: fadein 3s, slidein-right 3s;
+}
+h2.home__description{
+  animation: fadein 3s, slidein-left 3s;
+}
+
+  
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+@keyframes slidein-left {
+  0% {
+      transform: translateX(-10%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slidein-right {
+  0% {
+      transform: translateX(10%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+/* --- */
+
+
 a {
   text-decoration: none;
   color: var(--color-white);
@@ -498,6 +539,8 @@ opacity:0.8;
   text-align: center;
   width:100%;
   display: none;
+  
+  
   
 }
 

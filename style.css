@@ -149,6 +149,7 @@ p {
 
 #navbar.navbar--dark{
   background-color: var(--color-blue);
+  opacity: 0.9;
 }
 
 .navbar__menu {
@@ -222,6 +223,7 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+  animation: fadein 3s;
 }
 
 .home__contact:hover {
@@ -248,6 +250,8 @@ p {
   margin: 80px 0;
   
 }
+
+
 
 .major__icon {
   width: 170px;
